@@ -1,6 +1,8 @@
 package testNG;
 
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 import eShopPages.CustomerDetailsPage;
@@ -10,44 +12,52 @@ public class EShopUITests extends BaseTest
 {
 
 	String URL = "https://eir-eshop-frontend.e2e.ion.comhar.local/";
+	public OfferSelectionPage offerSelectionPage;
+	
+	@BeforeGroups("OfferSelectionPage")
+	public void initializeOfferSelectionPage() {
+		offerSelectionPage =  PageFactory.initElements(driver, OfferSelectionPage.class);
 
-	@Test
+	}
+
+	@Test(groups = {"OfferSelectionPage"})
 	public void acceptCookies()
 	{
-		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
+
+//		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(getDriver());
 		offerSelectionPage.clickAcceptCookies();
 	}
 
-	@Test
+	@Test(groups = {"OfferSelectionPage"})
 	public void addAnOffer()
 	{
-		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
+//		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
 		offerSelectionPage.selectOffer();
 	}
 
-	@Test
+	@Test(groups = {"OfferSelectionPage"})
 	public void addAnotherOffer()
 	{
-		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
+//		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
 		offerSelectionPage.selectAnotherProduct();
 		offerSelectionPage.selectOffer();
 	}
 	
-	@Test
-	public void addDeleteOfferLine2()
+	@Test(groups = {"OfferSelectionPage"})
+	public void deleteOfferLine2()
 	{
-		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
+//		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
 		offerSelectionPage.deleteSelectedOfferLine2();
 	}
 	
-	@Test
-	public void addDeleteOfferLine1()
+	@Test(groups = {"OfferSelectionPage"})
+	public void deleteOfferLine1()
 	{
-		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
+//		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);
 		offerSelectionPage.deleteSelectedOfferLine1();
 	}
 	
-	@Test
+	@Test(groups = {"CustomerDetailsPage"})
 	public void selectOneOfferAndContinue()
 	{
 		OfferSelectionPage offerSelectionPage = new OfferSelectionPage(driver);

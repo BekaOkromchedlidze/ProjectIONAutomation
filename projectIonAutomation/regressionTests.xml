@@ -7,9 +7,9 @@
 			<class name="testNG.WordpressUITests" />
 		</classes>
 	</test>
-	<test name="eShop UI">
-		<classes>
-			<class name="testNG.EShopUITests" />
+	<test name="eShop UI" >
+		<classes> 
+		<class name="testNG.EShopUITests" /> 
 		</classes>
 	</test>
 </suite>

@@ -9,7 +9,9 @@ import java.io.OutputStream;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest
@@ -20,6 +22,17 @@ public class BaseTest
 	public WebDriver getDriver()
 	{
 		return driver;
+	}
+	
+	@BeforeClass
+	public void setUp() {
+		driver = new ChromeDriver();
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		//Close chromedriver
+		driver.close();
 	}
 
 	@BeforeSuite
@@ -38,16 +51,11 @@ public class BaseTest
 		// set chromedriver property
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 		
-		driver = new ChromeDriver();
-		
 	}
 
 	@AfterSuite
 	public void afterSuite()
 	{
-		//Close chromedriver
-		driver.close();
-		
 //		kill chromedriver on program shutdown
 		Runtime.getRuntime().addShutdownHook(new Thread(new Runnable()
 		{
