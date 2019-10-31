@@ -18,8 +18,12 @@ public class WordpressUITests extends BaseTest
 	@Test
 	public void WordpressLoadsSuccessfully()
 	{
+//		logger = report.createTest("Check online status of Wordpress");
+		
 		WordpressPage wordpressPage = new WordpressPage(driver);
 		wordpressPage.waitUntilPageLoads();
+		
+//		logger.pass("Wordpress loaded successfully.");
 	}
 
 }

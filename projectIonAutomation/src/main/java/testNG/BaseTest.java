@@ -16,6 +16,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import utilities.ConfigDataProvider;
@@ -25,9 +27,10 @@ import utilities.Helper;
 public class BaseTest
 {
 	public static WebDriver driver;
-	ConfigDataProvider config = new ConfigDataProvider();
-	ExcelDataProvider excel = new ExcelDataProvider();
-
+	public ConfigDataProvider config;
+	public ExcelDataProvider excel;
+	public ExtentReports report;
+	public ExtentTest logger;
 
 	
 	@BeforeClass
@@ -48,10 +51,12 @@ public class BaseTest
 		{
 			Helper.captureScreenshot(driver);
 		}
+		
+		report.flush();
 	}
 
 	@BeforeSuite
-	public void beforeSuite()
+	public void setUpSuite()
 	{
 		/// Extract chromedriver to local directory if it does not exist
 		try
@@ -65,8 +70,14 @@ public class BaseTest
 		// set chromedriver property
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 		
-		// Extent Reporter
-//		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty()))
+		// Initialise Utilities
+		config = new ConfigDataProvider();
+		excel = new ExcelDataProvider();
+		
+		// Extent Reporter setup
+		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/test-output/ExtentReport/Report.html"));
+		report = new ExtentReports();
+		report.attachReporter(extent);
 	}
 
 	@AfterSuite

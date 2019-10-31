@@ -7,7 +7,6 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDownMethod"/>
-          <include name="afterClass"/>
           <include name="placeSingleLineOrder" invocation-numbers="0"/>
         </methods>
       </class> <!-- testNG.E2eOrder -->

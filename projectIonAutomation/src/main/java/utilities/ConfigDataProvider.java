@@ -32,6 +32,7 @@ public class ConfigDataProvider
 	}
 	
 	public String getE2eWordpressURL() {
+		System.out.println(properties.getProperty("e2eWordpressURL"));
 		return properties.getProperty("e2eWordpressURL");
 	}
 	
