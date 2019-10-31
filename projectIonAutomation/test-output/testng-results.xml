@@ -1,125 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="2" ignored="0" total="7" passed="4">
+<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="24608" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:56:07 IST">
+  <suite name="Default suite" duration-ms="49874" started-at="2019-10-31T09:26:44 GMT" finished-at="2019-10-31T09:27:33 GMT">
     <groups>
     </groups>
-    <test name="Wordpress UI" duration-ms="144" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:55:43 IST">
-      <class name="testNG.WordpressUITests">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:testNG.WordpressUITests@543e710e]" name="beforeClass" is-config="true" duration-ms="1" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:55:43 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at testNG.WordpressUITests.beforeClass(WordpressUITests.java:15)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="49874" started-at="2019-10-31T09:26:44 GMT" finished-at="2019-10-31T09:27:33 GMT">
+      <class name="testNG.E2eOrder">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testNG.E2eOrder@27f981c6]" name="setUp" is-config="true" duration-ms="7680" started-at="2019-10-31T09:26:44 GMT" finished-at="2019-10-31T09:26:51 GMT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="WordpressLoadsSuccessfully()[pri:0, instance:testNG.WordpressUITests@543e710e]" name="WordpressLoadsSuccessfully" duration-ms="0" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:55:43 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at testNG.WordpressUITests.beforeClass(WordpressUITests.java:15)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WordpressLoadsSuccessfully -->
-      </class> <!-- testNG.WordpressUITests -->
-    </test> <!-- Wordpress UI -->
-    <test name="eShop UI" duration-ms="24422" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:56:07 IST">
-      <class name="testNG.EShopUITests">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="beforeSuite" is-config="true" duration-ms="3743" started-at="2019-10-24T18:55:39 IST" finished-at="2019-10-24T18:55:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="beforeClass" is-config="true" duration-ms="609" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:55:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="acceptCookies()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="acceptCookies" duration-ms="1386" started-at="2019-10-24T18:55:43 IST" finished-at="2019-10-24T18:55:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acceptCookies -->
-        <test-method status="PASS" signature="addAnOffer()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="addAnOffer" duration-ms="180" started-at="2019-10-24T18:55:45 IST" finished-at="2019-10-24T18:55:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAnOffer -->
-        <test-method status="PASS" signature="addAnotherOffer()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="addAnotherOffer" duration-ms="981" started-at="2019-10-24T18:55:45 IST" finished-at="2019-10-24T18:55:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAnotherOffer -->
-        <test-method status="PASS" signature="addDeleteOfferLine1()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="addDeleteOfferLine1" duration-ms="651" started-at="2019-10-24T18:55:46 IST" finished-at="2019-10-24T18:55:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addDeleteOfferLine1 -->
-        <test-method status="FAIL" signature="addDeleteOfferLine2()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="addDeleteOfferLine2" duration-ms="10280" started-at="2019-10-24T18:55:47 IST" finished-at="2019-10-24T18:55:57 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="placeSingleLineOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.E2eOrder@27f981c6]" name="placeSingleLineOrder" duration-ms="41439" started-at="2019-10-31T09:26:51 GMT" data-provider="getTestData" finished-at="2019-10-31T09:27:33 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ok]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0857353778]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Passport]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4253344D]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[02/02/1992]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[D24YX53]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="container"]/div[2]/div[1]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/button' (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //input[@value='Submit'] (tried for 20 second(s) with 500 MILLISECONDS interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="container"]/div[2]/div[1]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/button' (tried for 10 second(s) with 500 MILLISECONDS interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@value='Submit'] (tried for 20 second(s) with 500 MILLISECONDS interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-at eShopPages.OfferSelectionPage.deleteSelectedOfferLine2(OfferSelectionPage.java:116)
-at testNG.EShopUITests.addDeleteOfferLine2(EShopUITests.java:40)
+at eShopPages.SummaryPage.enterDetailsAndPay(SummaryPage.java:125)
+at testNG.E2eOrder.placeSingleLineOrder(E2eOrder.java:87)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -148,36 +112,17 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="container"]/div[2]/div[1]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/button"}
-  (Session info: chrome=77.0.3865.90)
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 12 milliseconds
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //input[@value='Submit']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'P03326', ip: '10.152.12.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56422}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir9104_16292}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f5542b2f5636f4648a23a217e5b451e
-*** Element info: {Using=xpath, value=//*[@id="container"]/div[2]/div[1]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/button}
-at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:673)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:669)
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+at java.util.Optional.orElseThrow(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
 ... 30 more
 ]]>
@@ -185,55 +130,61 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addDeleteOfferLine2 -->
-        <test-method status="FAIL" signature="selectOneOfferAndContinue()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="selectOneOfferAndContinue" duration-ms="10316" started-at="2019-10-24T18:55:57 IST" finished-at="2019-10-24T18:56:07 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- placeSingleLineOrder -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testNG.E2eOrder@27f981c6]" name="afterClass" is-config="true" duration-ms="424" started-at="2019-10-31T09:27:33 GMT" finished-at="2019-10-31T09:27:33 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="FAIL" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:testNG.E2eOrder@27f981c6]" name="tearDownMethod" is-config="true" duration-ms="251" started-at="2019-10-31T09:27:33 GMT" finished-at="2019-10-31T09:27:33 GMT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeSingleLineOrder status=FAILURE method=E2eOrder.placeSingleLineOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.E2eOrder@27f981c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="jss27 jss1 jss3 jss4 jss6 jss7 jss24"]"}
-  (Session info: chrome=77.0.3865.90)
+              <![CDATA[invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 245 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'P03326', ip: '10.152.12.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56422}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir9104_16292}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f5542b2f5636f4648a23a217e5b451e
-*** Element info: {Using=xpath, value=//button[@class="jss27 jss1 jss3 jss4 jss6 jss7 jss24"]}]]>
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b9dd546bdf60e7611a4cac5639f3269b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class="jss27 jss1 jss3 jss4 jss6 jss7 jss24"]"}
-  (Session info: chrome=77.0.3865.90)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
   (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 245 milliseconds
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'P03326', ip: '10.152.12.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56422}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir9104_16292}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2f5542b2f5636f4648a23a217e5b451e
-*** Element info: {Using=xpath, value=//button[@class="jss27 jss1 jss3 jss4 jss6 jss7 jss24"]}
-at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b9dd546bdf60e7611a4cac5639f3269b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy8.click(Unknown Source)
-at eShopPages.OfferSelectionPage.selectOffer(OfferSelectionPage.java:93)
-at testNG.EShopUITests.selectOneOfferAndContinue(EShopUITests.java:54)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+at utilities.Helper.captureScreenshot(Helper.java:18)
+at testNG.E2eOrder.tearDownMethod(E2eOrder.java:125)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
@@ -258,15 +209,94 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectOneOfferAndContinue -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testNG.EShopUITests@70a9f84e]" name="afterSuite" is-config="true" duration-ms="161" started-at="2019-10-24T18:56:07 IST" finished-at="2019-10-24T18:56:07 IST">
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:testNG.E2eOrder@27f981c6]" name="setUp" is-config="true" duration-ms="-1572514053906" started-at="2019-10-31T09:27:33 GMT" finished-at="1970-01-01T01:00:00 GMT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testNG.EShopUITests -->
-    </test> <!-- eShop UI -->
-  </suite> <!-- Regression Suite -->
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="placeSingleLineOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.E2eOrder@27f981c6]" name="placeSingleLineOrder" duration-ms="0" started-at="2019-10-31T09:27:33 GMT" data-provider="getTestData" finished-at="2019-10-31T09:27:33 GMT">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 245 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'P03326', ip: '10.152.12.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b9dd546bdf60e7611a4cac5639f3269b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 245 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'P03326', ip: '10.152.12.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b9dd546bdf60e7611a4cac5639f3269b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+at utilities.Helper.captureScreenshot(Helper.java:18)
+at testNG.E2eOrder.tearDownMethod(E2eOrder.java:125)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeSingleLineOrder -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:testNG.E2eOrder@27f981c6]" name="afterClass" is-config="true" duration-ms="-1572514053914" started-at="2019-10-31T09:27:33 GMT" finished-at="1970-01-01T01:00:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:testNG.E2eOrder@27f981c6]" name="tearDownMethod" is-config="true" duration-ms="-1572514053915" started-at="2019-10-31T09:27:33 GMT" finished-at="1970-01-01T01:00:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- testNG.E2eOrder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

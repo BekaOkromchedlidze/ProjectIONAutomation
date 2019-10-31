@@ -7,7 +7,7 @@ import eShopPages.WordpressPage;
 
 public class WordpressUITests extends BaseTest
 {
-	String URL = "https://wordpress.e2e.ion.comhar.local/";
+	String URL = config.getE2eWordpressURL();
 
 	@BeforeClass
 	public void beforeClass()

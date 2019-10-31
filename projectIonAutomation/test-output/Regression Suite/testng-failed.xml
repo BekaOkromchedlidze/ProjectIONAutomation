@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
-  <test thread-count="5" name="Wordpress UI(failed)">
+  <test thread-count="5" name="eShop Customer Details Page(failed)">
     <classes>
-      <class name="testNG.WordpressUITests">
+      <class name="testNG.EShopCustomerDetailsPageTests">
         <methods>
-          <include name="WordpressLoadsSuccessfully"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- testNG.WordpressUITests -->
-    </classes>
-  </test> <!-- Wordpress UI(failed) -->
-  <test thread-count="5" name="eShop UI(failed)">
-    <classes>
-      <class name="testNG.EShopUITests">
-        <methods>
+          <include name="tearDownMethod"/>
           <include name="beforeClass"/>
           <include name="afterSuite"/>
-          <include name="addDeleteOfferLine2"/>
+          <include name="enterEmailNegativeTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="beforeSuite"/>
-          <include name="selectOneOfferAndContinue"/>
         </methods>
-      </class> <!-- testNG.EShopUITests -->
+      </class> <!-- testNG.EShopCustomerDetailsPageTests -->
     </classes>
-  </test> <!-- eShop UI(failed) -->
+  </test> <!-- eShop Customer Details Page(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

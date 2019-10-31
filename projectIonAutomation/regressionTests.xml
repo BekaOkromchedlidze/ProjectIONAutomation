@@ -7,9 +7,15 @@
 			<class name="testNG.WordpressUITests" />
 		</classes>
 	</test>
-	<test name="eShop UI" >
-		<classes> 
-		<class name="testNG.EShopUITests" /> 
+	<test name="eShop Offer Selection Page">
+		<classes>
+			<class name="testNG.EShopOfferSelectionPageTests" />
 		</classes>
 	</test>
+	<test name="eShop Customer Details Page">
+		<classes>
+			<class name="testNG.EShopCustomerDetailsPageTests" />
+		</classes>
+	</test>
+	
 </suite>

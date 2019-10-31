@@ -30,6 +30,9 @@ public class OfferSelectionPage {
 	@FindBy(xpath = "//button[@type='button' and contains(., 'Continue')]")
 	public WebElement buttonNext;
 	
+	@FindBy(xpath = "//button[@aria-label=\"cart\"]/*/*/span")
+	public WebElement pageItemsInCart;
+	
 	@FindBy(xpath = "//*[@id=\"container\"]/div[2]/div[1]/div[1]/div[1]/div/div/div/div[1]/div[2]/div/button")
 	public WebElement buttonDeleteOfferLine1;
 	@FindBy(xpath = "//*[@id=\"container\"]/div[2]/div[1]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/button")

@@ -9,30 +9,45 @@ import java.io.OutputStream;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import utilities.ConfigDataProvider;
+import utilities.ExcelDataProvider;
+import utilities.Helper;
+
 public class BaseTest
 {
-	public WebDriver driver;
+	public static WebDriver driver;
+	ConfigDataProvider config = new ConfigDataProvider();
+	ExcelDataProvider excel = new ExcelDataProvider();
 
 
-	public WebDriver getDriver()
-	{
-		return driver;
-	}
 	
 	@BeforeClass
 	public void setUp() {
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 	
 	@AfterClass
 	public void tearDown() {
 		//Close chromedriver
 		driver.close();
+	}
+	
+	@AfterMethod
+	public void tearDownMethod(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE)
+		{
+			Helper.captureScreenshot(driver);
+		}
 	}
 
 	@BeforeSuite
@@ -44,13 +59,14 @@ public class BaseTest
 			extractChromeDriver();
 		} catch (FileNotFoundException e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 		// set chromedriver property
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver.exe");
 		
+		// Extent Reporter
+//		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty()))
 	}
 
 	@AfterSuite

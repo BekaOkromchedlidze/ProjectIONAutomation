@@ -63,10 +63,14 @@ public class CustomerDetailsPage {
 	@FindBy(xpath = "//*[contains(text(), 'GoMo to contact')]//ancestor::label//input[@type='checkbox']")
 	public WebElement checkboxAllowION;
 	
+	@FindBy(xpath = "//h2[contains(text(),'Billing Address')]//ancestor::div[3]//descendant::button[@id='EirCodeButton']")
+	public WebElement buttonConfirmBillingEircode;
+	@FindBy(xpath = "//h2[contains(text(),'Delivery Address')]//ancestor::div[3]//descendant::button[@id='EirCodeButton']")
+	public WebElement buttonConfirmDeliveryEircode;
 	
 	@FindBy(xpath = "//*[@id=\"sameBillingAddress\"]")
 	public WebElement checkboxSameDeliveryAddress;
-	@FindBy(xpath = "//h2[contains(text(),'Billing Address')]//ancestor::div[3]//descendant::input[@id='eirCode']")
+	@FindBy(xpath = "//input[@id='eirCode']")
 	public WebElement textBillingAddressEircode;
 	@FindBy(xpath = "//h2[contains(text(),'Billing Address')]//ancestor::div[3]//descendant::input[@name='addressLine1']")
 	public WebElement textBillingAddressLine1;
@@ -156,6 +160,9 @@ public class CustomerDetailsPage {
 	@FindBy(xpath = "//button[contains(span, 'Continue')]")
 	public WebElement buttonConfirm;
 	
+	
+	@FindBy(xpath = "//p[@id='error-text']")
+	public WebElement errorText;
 	/*
 	 * @FindBy(xpath = ) public WebElement buttonSelect30GBProduct;
 	 * 
@@ -183,6 +190,12 @@ public class CustomerDetailsPage {
 		selectIdType(idType);
 		enterIDNumber(idNumber);
 		enterDateOfBirth(dateOfBirth);
+	}
+	
+	public void setBillingEircodeAddress(String billingEircode) {
+		enterBillingAddressEircode(billingEircode);
+//		wait.until(ExpectedConditions.elementToBeClickable(buttonConfirmEircode));
+		buttonConfirmBillingEircode.click();
 	}
 	
 	public void enterBillingAddress(String billingAddressLine1, String billingAddressLine2, String billingAddressLine3, String billingAddressTown, String billingAddressCounty) {
@@ -234,31 +247,35 @@ public class CustomerDetailsPage {
 	}
 	
 	public void enterContactNumber(String contactNumber) {
-		textLastname.sendKeys(contactNumber);
+		textContactNumber.sendKeys(contactNumber);
 	}	
 	
 	public void enterIDNumber(String idNumber) {
-		textLastname.sendKeys(idNumber);
+		textIDNumber.sendKeys(idNumber);
 	}
 	
 	public void enterDateOfBirth(String dateOfBith) {
-		textLastname.sendKeys(dateOfBith);
+		textDateOfBirth.sendKeys(dateOfBith);
+	}
+	
+	public void enterBillingAddressEircode(String billingAddressEircode) {
+		textBillingAddressEircode.sendKeys(billingAddressEircode);
 	}
 	
 	public void enterBillingAddressLine1(String billingAddressLine1) {
-		textLastname.sendKeys(billingAddressLine1);
+		textBillingAddressLine1.sendKeys(billingAddressLine1);
 	}
 	
 	public void enterBillingAddressLine2(String billingAddressLine2) {
-		textLastname.sendKeys(billingAddressLine2);
+		textBillingAddressLine2.sendKeys(billingAddressLine2);
 	}
 	
 	public void enterBillingAddressLine3(String billingAddressLine3) {
-		textLastname.sendKeys(billingAddressLine3);
+		textBillingAddressLine3.sendKeys(billingAddressLine3);
 	}
 	
 	public void enterBillingAddressTown(String billingAddressTown) {
-		textLastname.sendKeys(billingAddressTown);
+		textBillingTown.sendKeys(billingAddressTown);
 	}
 	
 	public void selectBillingAddressCounty(String billingAddressCounty) {
@@ -285,20 +302,24 @@ public class CustomerDetailsPage {
 		
 	}
 	
+	public void enterDeliveryAddressEircode(String deliveryAddressEircode) {
+		textDeliveryAddressEircode.sendKeys(deliveryAddressEircode);
+	}
+	
 	public void enterDeliveryAddressLine1(String deliveryAddressLine1) {
-		textLastname.sendKeys(deliveryAddressLine1);
+		textDeliveryAddressLine1.sendKeys(deliveryAddressLine1);
 	}
 	
 	public void enterDeliveryAddressLine2(String deliveryAddressLine2) {
-		textLastname.sendKeys(deliveryAddressLine2);
+		textDeliveryAddressLine2.sendKeys(deliveryAddressLine2);
 	}
 	
 	public void enterDeliveryAddressLine3(String deliveryAddressLine3) {
-		textLastname.sendKeys(deliveryAddressLine3);
+		textDeliveryAddressLine3.sendKeys(deliveryAddressLine3);
 	}
 	
 	public void enterDeliveryAddressTown(String deliveryAddressTown) {
-		textLastname.sendKeys(deliveryAddressTown);
+		textDeliveryTown.sendKeys(deliveryAddressTown);
 	}
 	
 	public void selectDeliveryAddressCounty(String deliveryAddressCounty) {
@@ -331,6 +352,7 @@ public class CustomerDetailsPage {
 	}
 	
 	public void selectTitle(String title) {
+		wait.until(ExpectedConditions.elementToBeClickable(dropdownTitleSelection));
 		dropdownTitleSelection.click();
 		wait.until(ExpectedConditions.elementToBeClickable(selectMr));
 

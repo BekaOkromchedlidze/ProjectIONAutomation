@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.EShopUITests">
+      <class name="testNG.E2eOrder">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterSuite"/>
-          <include name="addDeleteOfferLine2"/>
-          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="tearDownMethod"/>
+          <include name="afterClass"/>
+          <include name="placeSingleLineOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.EShopUITests -->
+      </class> <!-- testNG.E2eOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
