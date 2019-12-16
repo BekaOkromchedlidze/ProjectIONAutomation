@@ -14,7 +14,7 @@ public class OfferSelectionPage {
 	public WebDriverWait wait;
 
 	// Locators
-	@FindBy(xpath = "//button[contains(.,'Accept Cookies')]")
+	@FindBy(xpath = "//button[contains(text(),'Accept Cookies')]")
 	public WebElement buttonAcceptCookies;
 	
 	@FindBy(xpath = "//button[contains(span, 'Buy now')]")
@@ -46,6 +46,9 @@ public class OfferSelectionPage {
 	private WebElement buttonMobilePorting3;
 	@FindBy(xpath = "//*[@id=\"container\"]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/span[1]")
 	private WebElement buttonMobilePorting4;
+	
+	@FindBy(xpath = "//div[contains(p, 'Login')]")
+	public WebElement buttonLogin;
 
 	// Constructor
 	public OfferSelectionPage(WebDriver driver) {
@@ -85,6 +88,22 @@ public class OfferSelectionPage {
 			e.printStackTrace();
 		}
 	}
+	
+	public void selectOffer(String numOfOffers) {
+		// Single line or Multiline order?
+		if (numOfOffers.trim().compareToIgnoreCase("1") == 0) {
+			System.out.println("Placing a Singline order");
+			selectOffer();
+		} else if (numOfOffers.trim().compareToIgnoreCase("2") == 0){
+			System.out.println("Placing a Multiline order");
+			selectOffer();
+			selectAnotherProduct();
+			selectOffer();
+		} else {
+			System.out.println("Number of offers entered not recognised.");
+		}
+		
+	}
 
 	public void selectOffer() {
 		try
@@ -119,6 +138,12 @@ public class OfferSelectionPage {
 		wait.until(ExpectedConditions.elementToBeClickable(buttonDeleteOfferLine2));
 		buttonDeleteOfferLine2.click();
 	}
+	
+	public void clickLogin() {
+		wait.until(ExpectedConditions.elementToBeClickable(buttonLogin));
+		buttonLogin.click();
+	}
+	
 
 	public void toggleMobilePortButton(int lineNum) {
 

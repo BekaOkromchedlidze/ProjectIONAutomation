@@ -29,7 +29,7 @@ public class ConfirmationPage {
 
 	public String getOrderNumber() {
 		wait.until(ExpectedConditions.visibilityOf(orderNumber));
-		return orderNumber.getText();
+		return orderNumber.getText().substring(orderNumber.getText().indexOf(": ") + 2);
 	}
 
 }

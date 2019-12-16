@@ -22,7 +22,7 @@ public class CustomerDetailsPage {
 	@FindBy(xpath = "//*[@id=\"emailConfirm\"]")
 	public WebElement textEmailConfirmation;
 
-	@FindBy(xpath = "//*[@id=\"select-title\"]")
+	@FindBy(xpath = "//label[contains(text(),'Title *')]//ancestor::div[1]//descendant::div[@role='button']")
 	public WebElement dropdownTitleSelection;
 	@FindBy(xpath = "//*[@id=\"owner.person.title\"]")
 	public WebElement inputTitleSelection;
@@ -42,7 +42,7 @@ public class CustomerDetailsPage {
 	@FindBy(xpath = "//*[@id=\"mobileNumber\"]")
 	public WebElement textContactNumber;
 
-	@FindBy(xpath = "//*[@id='select-identityDocument']")
+	@FindBy(xpath = "//label[contains(text(),' ID Type *')]//ancestor::div[1]//descendant::div[@role='button']")
 	public WebElement dropdownIDType;
 	@FindBy(xpath = "//input[@id=\"select-title\"]")
 	public WebElement inputTitle;
@@ -93,9 +93,9 @@ public class CustomerDetailsPage {
 	public WebElement textDeliveryTown;
 	
 
-	@FindBy(xpath = "//h2[contains(text(),'Billing Address')]//ancestor::div[3]//following::div[@id='select-county']")
+	@FindBy(xpath = "//h2[contains(text(),'Billing Address')]//ancestor::div[3]//descendant::div[@role='button']")
 	public WebElement dropdownBillingCounty;
-	@FindBy(xpath = "//h2[contains(text(),'Delivery Address')]//ancestor::div[3]//following::div[@id='select-county']")
+	@FindBy(xpath = "//h2[contains(text(),'Delivery Address')]//ancestor::div[3]//descendant::div[@role='button']")
 	public WebElement dropdownDeliveryCounty;
 	@FindBy(xpath = "//li[contains(text(),'CARLOW')]")
 	public WebElement selectCarlow;
@@ -187,8 +187,9 @@ public class CustomerDetailsPage {
 		enterFirstName(firstName);
 		enterSecondName(secondName);
 		enterContactNumber(contactNumber);
-		selectIdType(idType);
-		enterIDNumber(idNumber);
+		// ID type and number has been removed in Release 18a
+//		selectIdType(idType);
+//		enterIDNumber(idNumber);
 		enterDateOfBirth(dateOfBirth);
 	}
 	
@@ -400,6 +401,7 @@ public class CustomerDetailsPage {
 	
 	public void selectTandCs()
 	{
+		wait.until(ExpectedConditions.elementToBeClickable(buttonConfirm));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", checkboxIonTandCs);
 	}

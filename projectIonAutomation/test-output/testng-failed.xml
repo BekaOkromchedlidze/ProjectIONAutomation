@@ -3,13 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.E2eOrder">
+      <class name="uiTests.CustomerActionsTests">
         <methods>
-          <include name="setUp"/>
+          <include name="completeSinglelineAccountSetUp"/>
+          <include name="afterSuite"/>
+          <include name="setUpSuite"/>
+          <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
-          <include name="placeSingleLineOrder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testNG.E2eOrder -->
+      </class> <!-- uiTests.CustomerActionsTests -->
+      <class name="uiTests.E2eOrder">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="afterSuite"/>
+          <include name="setUpSuite"/>
+          <include name="setUpMethod"/>
+          <include name="startDriver"/>
+          <include name="placeSinglelineOrder" invocation-numbers="0"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- uiTests.E2eOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
