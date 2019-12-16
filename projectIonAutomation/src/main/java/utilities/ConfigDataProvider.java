@@ -28,7 +28,11 @@ public class ConfigDataProvider
 	}
 	
 	public String getDataFromConfig(String keyToSearch) {
-		return properties.getProperty(keyToSearch);
+		if (properties.getProperty(keyToSearch).equalsIgnoreCase("null")) {
+			throw new NullPointerException(keyToSearch + " property not found in Config.properties file.");
+		} else {
+			return properties.getProperty(keyToSearch);
+		}
 	}
 	
 	public String getE2eWordpressURL() {

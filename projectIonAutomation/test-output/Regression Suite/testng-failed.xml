@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
-  <test thread-count="5" name="eShop Customer Details Page(failed)">
+  <test thread-count="5" name="E2E Order Tests(failed)">
     <classes>
-      <class name="testNG.EShopCustomerDetailsPageTests">
+      <class name="uiTests.ProcessLogistics">
         <methods>
-          <include name="tearDownMethod"/>
-          <include name="beforeClass"/>
+          <include name="provisioningCheckCrossSell" invocation-numbers="0"/>
+          <include name="processCrossSellLogistics"/>
+          <include name="startDriver"/>
+          <include name="provisioningCheckSingleline" invocation-numbers="0"/>
           <include name="afterSuite"/>
-          <include name="enterEmailNegativeTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="beforeSuite"/>
+          <include name="setUpSuite"/>
+          <include name="provisioningCheckMultiline" invocation-numbers="0"/>
+          <include name="processMultilineLogistics"/>
+          <include name="setUpMethod"/>
+          <include name="processSinglelineLogistics"/>
+          <include name="closeDriver"/>
+          <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- testNG.EShopCustomerDetailsPageTests -->
+      </class> <!-- uiTests.ProcessLogistics -->
+      <class name="uiTests.E2eOrder">
+        <methods>
+          <include name="placeMultilineOrder"/>
+          <include name="closeDriver"/>
+          <include name="placeCrossSellOrder"/>
+          <include name="afterSuite"/>
+          <include name="setUpSuite"/>
+          <include name="setUpMethod"/>
+          <include name="startDriver"/>
+          <include name="placeSinglelineOrder"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- uiTests.E2eOrder -->
+      <class name="uiTests.CustomerActionsTests">
+        <methods>
+          <include name="completeSinglelineAccountSetUp"/>
+          <include name="afterSuite"/>
+          <include name="setUpSuite"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- uiTests.CustomerActionsTests -->
     </classes>
-  </test> <!-- eShop Customer Details Page(failed) -->
+  </test> <!-- E2E Order Tests(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

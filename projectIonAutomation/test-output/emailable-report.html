@@ -8,166 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,874</td><td></td><td></td></tr>
+<tr><th colspan="7">Regression Suite</th></tr>
+<tr><td><a href="#t0">E2E Order Tests</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">276,974</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testNG.E2eOrder</td><td><a href="#m0">tearDownMethod</a></td><td rowspan="1">1572514053650</td><td rowspan="1">251</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNG.E2eOrder</td><td><a href="#m1">placeSingleLineOrder</a></td><td rowspan="1">1572514011781</td><td rowspan="1">41439</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testNG.E2eOrder</td><td><a href="#m2">afterClass</a></td><td rowspan="1">1572514053914</td><td rowspan="1">-1572514053914</td></tr><tr class="skippedeven"><td><a href="#m3">setUp</a></td><td rowspan="1">1572514053906</td><td rowspan="1">-1572514053906</td></tr><tr class="skippedeven"><td><a href="#m4">tearDownMethod</a></td><td rowspan="1">1572514053915</td><td rowspan="1">-1572514053915</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testNG.E2eOrder</td><td><a href="#m5">placeSingleLineOrder</a></td><td rowspan="1">1572514053908</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E Order Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">uiTests.CustomerActionsTests</td><td><a href="#m0">completeMultilineAccountSetUp</a></td><td rowspan="1">1576507502039</td><td rowspan="1">14157</td></tr><tr class="passedeven"><td><a href="#m1">completeSinglelineAccountSetUp</a></td><td rowspan="1">1576507516199</td><td rowspan="1">9098</td></tr><tr class="passedodd"><td rowspan="3">uiTests.E2eOrder</td><td><a href="#m2">placeCrossSellOrder</a></td><td rowspan="1">1576507529292</td><td rowspan="1">22865</td></tr><tr class="passedodd"><td><a href="#m3">placeMultilineOrder</a></td><td rowspan="1">1576507424066</td><td rowspan="1">38651</td></tr><tr class="passedodd"><td><a href="#m4">placeSinglelineOrder</a></td><td rowspan="1">1576507471011</td><td rowspan="1">28718</td></tr><tr class="passedeven"><td rowspan="6">uiTests.ProcessLogistics</td><td><a href="#m5">processCrossSellLogistics</a></td><td rowspan="1">1576507560208</td><td rowspan="1">19412</td></tr><tr class="passedeven"><td><a href="#m6">processMultilineLogistics</a></td><td rowspan="1">1576507579623</td><td rowspan="1">4017</td></tr><tr class="passedeven"><td><a href="#m7">processSinglelineLogistics</a></td><td rowspan="1">1576507583645</td><td rowspan="1">14071</td></tr><tr class="passedeven"><td><a href="#m8">provisioningCheckCrossSell</a></td><td rowspan="1">1576507597719</td><td rowspan="1">31860</td></tr><tr class="passedeven"><td><a href="#m9">provisioningCheckMultiline</a></td><td rowspan="1">1576507629582</td><td rowspan="1">40267</td></tr><tr class="passedeven"><td><a href="#m10">provisioningCheckSingleline</a></td><td rowspan="1">1576507669852</td><td rowspan="1">183</td></tr><tr class="passedodd"><td rowspan="1">uiTests.WordpressUITests</td><td><a href="#m11">WordpressLoadsSuccessfully</a></td><td rowspan="1">1576507416932</td><td rowspan="1">2411</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testNG.E2eOrder#tearDownMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=placeSingleLineOrder status=FAILURE method=E2eOrder.placeSingleLineOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNG.E2eOrder@27f981c6] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 245 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;P03326&apos;, ip: &apos;10.152.12.26&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9dd546bdf60e7611a4cac5639f3269b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
-	at utilities.Helper.captureScreenshot(Helper.java:18)
-	at testNG.E2eOrder.tearDownMethod(E2eOrder.java:125)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testNG.E2eOrder#placeSingleLineOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>1</td><td>Mr</td><td>B</td><td>Ok</td><td>0857353778</td><td>Passport</td><td>4253344D</td><td>02/02/1992</td><td>yes</td><td>D24YX53</td><td>Yes</td><td></td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@value=&apos;Submit&apos;] (tried for 20 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at eShopPages.SummaryPage.enterDetailsAndPay(SummaryPage.java:125)
-	at testNG.E2eOrder.placeSingleLineOrder(E2eOrder.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //input[@value=&apos;Submit&apos;]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;P03326&apos;, ip: &apos;10.152.12.26&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
-	at java.util.Optional.orElseThrow(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 30 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testNG.E2eOrder#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testNG.E2eOrder#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testNG.E2eOrder#tearDownMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testNG.E2eOrder#placeSingleLineOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 245 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;P03326&apos;, ip: &apos;10.152.12.26&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61407}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=D:\Users\okromchb\AppData\Local\Temp\scoped_dir10784_10428}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=77.0.3865.90, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b9dd546bdf60e7611a4cac5639f3269b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
-	at utilities.Helper.captureScreenshot(Helper.java:18)
-	at testNG.E2eOrder.tearDownMethod(E2eOrder.java:125)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:770)
-	at org.testng.TestRunner.run(TestRunner.java:591)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>E2E Order Tests</h2><h3 id="m0">uiTests.CustomerActionsTests#completeMultilineAccountSetUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">uiTests.CustomerActionsTests#completeSinglelineAccountSetUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">uiTests.E2eOrder#placeCrossSellOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">uiTests.E2eOrder#placeMultilineOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td><td>2</td><td>Mr</td><td>B</td><td>Ok</td><td>0857353779</td><td>Passport</td><td>4253344D</td><td>02/02/1993</td><td>no</td><td>D24YX53</td><td>no</td><td>d15t0hh</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">uiTests.E2eOrder#placeSinglelineOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td><td>1</td><td>Mr</td><td>B</td><td>Ok</td><td>0857353778</td><td>Passport</td><td>4253344D</td><td>02/02/1992</td><td>yes</td><td>D24YX53</td><td>Yes</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">uiTests.ProcessLogistics#processCrossSellLogistics</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">uiTests.ProcessLogistics#processMultilineLogistics</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">uiTests.ProcessLogistics#processSinglelineLogistics</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">uiTests.ProcessLogistics#provisioningCheckCrossSell</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">uiTests.ProcessLogistics#provisioningCheckMultiline</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">uiTests.ProcessLogistics#provisioningCheckSingleline</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e24ddd0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">uiTests.WordpressUITests#WordpressLoadsSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

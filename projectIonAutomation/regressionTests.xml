@@ -2,20 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Regression Suite" verbose="1">
-	<test name="Wordpress UI">
+	<test name="E2E Order Tests">
 		<classes>
-			<class name="testNG.WordpressUITests" />
+			<class name="uiTests.WordpressUITests"/>
+			<class name="uiTests.E2eOrder">
+<!--				<methods>
+					<exclude name=".*Multiline.*" />
+					<exclude name=".*CrossSell.*" />
+				</methods>
+				-->
+			</class>
+			<class name="uiTests.CustomerActionsTests" />
+			<class name="uiTests.ProcessLogistics" />
 		</classes>
 	</test>
-	<test name="eShop Offer Selection Page">
-		<classes>
-			<class name="testNG.EShopOfferSelectionPageTests" />
-		</classes>
-	</test>
-	<test name="eShop Customer Details Page">
-		<classes>
-			<class name="testNG.EShopCustomerDetailsPageTests" />
-		</classes>
-	</test>
-	
 </suite>

@@ -16,6 +16,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- Selenium -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-support</artifactId>
@@ -39,16 +40,84 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.0.1</version>
 		</dependency>
-		<dependency>
-			<groupId>org.assertj</groupId>
-			<artifactId>assertj-core</artifactId>
-			<version>3.14.0</version>
-		</dependency>
+
+		<!-- Extent Test Reports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>4.0.9</version>
+			<artifactId>extentreports-testng-adapter</artifactId>
+			<version>1.0.3</version>
 		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<!-- Json Processing -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.sharelison</groupId>
+			<artifactId>jsontojava</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<!-- Connection to DB -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<!-- SSH Connection -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.55</version>
+		</dependency>
+
+		<!-- Google Sheets for processing logistics -->
+		<dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>1.28.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.oauth-client</groupId>
+			<artifactId>google-oauth-client-jetty</artifactId>
+			<version>1.22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-sheets</artifactId>
+			<version>v4-rev456-1.22.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stephenc.monte</groupId>
+			<artifactId>monte-screen-recorder</artifactId>
+			<version>0.7.7.0</version>
+		</dependency>
+
+
 
 	</dependencies>
 </project>
